@@ -9,6 +9,7 @@
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" href="icon-josyas.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="fixed-top" style="background-color: black;">
@@ -20,8 +21,8 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarConteudo" aria-controls="navbarConteudo" aria-expanded="false" aria-label="Navegação">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarConteudo">
-                <ul class="navbar-nav mx-auto my-auto mb-lg-0">
+              <div class="collapse navbar-collapse justify-content-center text-center" id="navbarConteudo">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                   <li class="nav-item pe-3">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
@@ -35,7 +36,7 @@
                     <a class="nav-link active" href="#galeria">Galeria</a>
                   </li>
                 </ul>
-              </div>
+              </div>              
             </div>
           </nav>
     </header>
@@ -92,8 +93,8 @@
             <div class="row g-4 align-items-center " style="margin-top: 100px;">
               
               <div class="col-lg-6 d-flex flex-wrap gap-5 justify-content-center mb-5">
-                <img src="images/imagem.png" class="img-fluid rounded" style="max-width: 40%;  margin-bottom: 10%;" alt="Corte de Cabelo">
-                <img src="images/imagem2.jpg" class="img-fluid rounded" style="max-width: 40%; margin-top: 10%;" alt="Corte de Barba">
+                <img data-aos="fade-up" src="images/imagem.png" class="img-fluid rounded" style="max-width: 40%;  margin-bottom: 10%;" alt="Corte de Cabelo">
+                <img data-aos="fade-down" src="images/imagem2.jpg" class="img-fluid rounded" style="max-width: 40%; margin-top: 10%;" alt="Corte de Barba">
               </div>
           
               
@@ -111,12 +112,12 @@
                 <div class="row text-center justify-content-md-center mt-4">
                   <div class="col-6 col-md-4">
                     <i class="bi bi-chat-heart fs-1 text-dark"></i>
-                    <h3 class="fw-bold mb-0">1.200<span class="text-warning">+</span></h3>
+                    <h3 data-aos="zoom-in" class="fw-bold mb-0">1.200<span class="text-warning">+</span></h3>
                     <small class="text-muted">Avaliações</small>
                   </div>
                   <div class="col-6 col-md-4">
                     <i class="bi-scissors fs-1 text-dark"></i>
-                    <h3 class="fw-bold mb-0">9<span class="text-warning">+</span></h3>
+                    <h3 data-aos="zoom-in" class="fw-bold mb-0">9<span class="text-warning">+</span></h3>
                     <small class="text-muted">Profissionais</small>
                   </div>
                 </div>
@@ -126,13 +127,13 @@
 
           <section class="container py-5 py-xl-5 mt-xxl-customizada" style="margin-bottom: 20vh;" id="horarios">
             <div class="row">
-              <div class="col-lg-4 col-md-5 mb-5">
+              <div class="col-lg-4 col-md-5 mb-5" data-aos="zoom-in">
                 <h2 class="display-5 fw-bold title pt-5" style="font-size: 2.5rem;">horários de funcionamento</h2>
                 <p class="text-muted">
                   Confira quando estamos disponíveis para te receber com o melhor atendimento possível.
                 </p>
               </div>
-              <div class="col-md-8">
+              <div data-aos="zoom-in" class="col-md-8">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                   <div class="col-4 d-flex">
                     <div class="p-3 bg-secondary text-white w-100 rounded shadow">
@@ -238,13 +239,13 @@
     
          
           <div class="col-md-4 text-center text-md-end">
-            <a href="https://www.facebook.com/josyasbarbershop/" class="btn btn-light rounded-circle mx-2 social-icon">
+            <a href="https://www.facebook.com/josyasbarbershop/"  target="_blank" class="btn btn-light rounded-circle mx-2 social-icon">
               <i class="bi bi-facebook fs-4"></i>
             </a>
-            <a href="https://www.instagram.com/josyasbarbershop/" class="btn btn-light rounded-circle mx-2 social-icon" >
+            <a href="https://www.instagram.com/josyasbarbershop/"  target="_blank" class="btn btn-light rounded-circle mx-2 social-icon" >
               <i class="bi bi-instagram fs-4"></i>
             </a>
-            <a href="https://www.youtube.com/@JosyasBarbershop" class="btn btn-light rounded-circle mx-2 social-icon">
+            <a href="https://www.youtube.com/@JosyasBarbershop"  target="_blank" class="btn btn-light rounded-circle mx-2 social-icon">
               <i class="bi bi-youtube fs-4"></i>
             </a>
           </div>
@@ -259,5 +260,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
